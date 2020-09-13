@@ -1,0 +1,21 @@
+a{
+    float: right;
+    text-decoration: none;
+    
+}
+.RecommendedFriends{
+    border: #c1c8ce solid 1px;
+    width: 300px;
+}
+.header{
+    padding: 10px;
+}
+.header span{
+    color: #c1c8ce;
+}
+.header a{
+    float: right;
+    text-decoration: none;
+    color: black;
+}
+

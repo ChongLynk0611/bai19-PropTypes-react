@@ -1,24 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import RecommendedFriends from './components/RecommendedFriend/index';
 function App() {
+  const friends =[
+    {name: 'Tronglinh0611'},
+    {name:'BaTuyen1102'},
+    {name: 'DucAnh1234'},
+    {name:'VanTa0908'}
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+      <RecommendedFriends friends={friends}/>
     </div>
   );
 }

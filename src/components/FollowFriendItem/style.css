@@ -1,0 +1,24 @@
+.FollowFriendListItem{
+    display: flex;
+    position: relative;
+    margin: 5px;
+}
+.FollowFriendListItem img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 5px;
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.info span:last-child{
+    color: #c1c8ce;
+}
+.FollowFriendListItem a{
+    position: absolute;
+    top: 3px;
+    right: 10px;
+}
