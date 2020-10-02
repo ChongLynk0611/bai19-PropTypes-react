@@ -5,7 +5,7 @@ import './style.css';
 
 class RecommendedFriend extends Component{
     render(){
-        const friends = this.props.friends;
+        const {friends} = this.props;
         return(
             <div className="RecommendedFriends">
                 <div className="header">
@@ -14,7 +14,7 @@ class RecommendedFriend extends Component{
                 </div>
                 {
                     friends.map((friend , index)=>(
-                        <FollowFriendListItem key={index} name={friend.name}/>
+                        <FollowFriendListItem key={index} friend={friend}/>
                     ))
                 }
             </div>

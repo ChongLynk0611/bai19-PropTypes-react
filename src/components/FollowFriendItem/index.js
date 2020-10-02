@@ -1,14 +1,16 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+
 import './style.css';
 
 class FollowFriendItem extends Component{
     render(){
-        const name = this.props.name;
+        const {friend} = this.props;
         return(
             <div className="FollowFriendListItem">
-                <img src =' https://znews-photo.zadn.vn/w660/Uploaded/aobovhp/2020_03_18/avatar.jpg' alt=""></img>
+                <img src ={friend.url} alt=""></img>
                 <div className="info">
-                    <span>{name}</span>
+                    <span>{friend.name}</span>
                     <span>Gợi ý cho bạn</span>
                 </div>
                 <a href="#">Theo dõi</a>
@@ -16,5 +18,11 @@ class FollowFriendItem extends Component{
         );
     }
 }
+FollowFriendItem.propTypes ={
+    friend: PropTypes.shape({
+        name:PropTypes.string,
+        url:PropTypes.string
+    })
 
+}
 export default FollowFriendItem;
